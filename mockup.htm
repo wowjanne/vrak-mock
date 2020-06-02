@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VRAK</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0,
+      maximum-scale=1.0"
+    />
+
+    <link type="text/css" rel="stylesheet" href="style.css" />    <link type="text/css" rel="stylesheet" href="responsive.css" />
+    <script src="script.js"></script>
+
+
+
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <div class="inner-header ig">
+        <!-- Logo -->
+        <img class="brand" id="logo" src="bilder/logo.png" />
+        <img class="brand-phone" src="bilder/logo-phone.png" />
+        <!-- Navigation links -->
+        <div class="nav-links">
+          <div class="lang">
+            <img src="bilder/earth.svg" />
+            <span>In English</span>
+          </div>
+
+          <div class="dd">
+            <img src="bilder/gubbe.svg" />
+            <span>Hjälp </span>
+            <img src="bilder/pil.svg" />
+          </div>
+
+          <div class="ticket">
+            <span>Köp biljett</span>
+          </div>
+
+          <div class="menubtn" id="toggleMenu">
+            <span>Meny</span>
+           <div id="icon" data-active="false">
+          </div>
+        </div>
+      </div>
+    </header>
+
+     <!-- Slideout menu -->
+     <div id="slide-out-menu" data-active="false" >
+<div class="search"><span>Sök</span>  <img src="bilder/search.svg" /></div>
+<div class="m-info">
+  <p>     <img src="bilder/clock.svg" /> Museet är öppet idag 09:00 till 17:00</p>
+  <P><b>Besök museet på: </b>Djurgårdsvägen 38, 115 21 Stockholm</P>
+</div>
+<div class="link-container no-border"><span class="link1 current">Startsida</span> </div>
+
+<div class="link-container">
+  <span class="link1">Vrak & lämningar</span> <div class="plusminus" aria-expanded="false"></div>
+</div>
+<div class="lvl2" aria-hidden="true">
+  <span class="link2">Vrakkarta</span>
+  <span class="link2">Lorem ipsum</span>
+  <span class="link2">Lorem ipsum</span>
+</div>
+
+<div class="link-container">
+  <span class="link1">Vrak Play</span> <div class="plusminus" aria-expanded="false"></div>
+</div>
+<div class="lvl2" aria-hidden="true">
+  <span class="link2">Vrakkarta</span>
+  <span class="link2">Lorem ipsum</span>
+  <span class="link2">Lorem ipsum</span>
+</div>
+
+<div class="link-container">
+  <span class="link1">Nyheter & forskning</span> <div class="plusminus" aria-expanded="false"></div>
+</div>
+<div class="lvl2" aria-hidden="true">
+  <span class="link2">Vrakkarta</span>
+  <span class="link2">Lorem ipsum</span>
+  <span class="link2">Lorem ipsum</span>
+</div>
+
+<div class="link-container">
+  <span class="link1">Om oss</span> <div class="plusminus" aria-expanded="false"></div>
+</div>
+<div class="lvl2" aria-hidden="true">
+  <span class="link2">Vrakkarta</span>
+  <span class="link2">Lorem ipsum</span>
+  <span class="link2">Lorem ipsum</span>
+</div>
+
+<div class="link-container bottom-links">
+  <span class="link-icon"><img src="bilder/tw.svg"/>Talande webb </span>
+  <span class="link-icon"><img src="bilder/ll.svg"/>Lättläst</span>
+  <span class="link-icon"><img src="bilder/till.svg"/>Tillgänglighet</span>
+</div>
+     </div>
+    <!-- Hero section -->
+    <div class="hero"> <video id="bgvid" autoplay muted loop> <source src="film/sea01.mp4" type="video/mp4">   
+    </video>
+
+
+    <video id="soundvid" loop> <source src="ljud/ocean.mp4" type="video/mp4">   
+
+
+    </video>
+  
+  </div>
+
+    <!-- Video section -->
+    <div class="video">
+
+
+      <div class="video-content ig" id="slide2" style="opacity:0;">
+        <div class="player" style="background:url(bilder/marin.jpg);background-size:cover;background-repeat:no-repeat;"></div>
+        <div class="text">
+          <h2>Marinarkeologi</h2>
+          <p class="preamble">
+            Våra utställningar tar med besökarna på en spännande tidsresa som
+            berättar om de dramatiska händelserna som finns bevarat under ytan i
+            Östersjön.
+          </p>
+          <div class="linkbutton">Läs mer</div>
+         
+        </div>
+           <button id="prev">   <img src="bilder/pil-or.svg" /></button>
+        <button class="disabled-next"> <img src="bilder/pil-or.svg" /></button>
+      </div>
+      <div class="video-content ig" id="slide1">
+        <div class="player">  
+          <video poster="bilder/poster.jpg" height="100%" id="vid">
+            <source src="film/vrak.mp4" type="video/mp4">   
+          </video>
+          <button id="play_button"><img src="bilder/play.svg" /></button>
+        </div>
+        <div class="text">
+          <h2>Se Östersjön med helt nya ögon</h2>
+          <p class="preamble">
+            Våra utställningar tar med besökarna på en spännande tidsresa som
+            berättar om de dramatiska händelserna som finns bevarat under ytan i
+            Östersjön.
+          </p>
+          <div class="linkbutton">Planera ditt besök</div>
+        </div>
+
+        <button class="disabled"> <img src="bilder/pil-or.svg" /></button>
+        <button id="next"> <img src="bilder/pil-or.svg" /></button>
+      </div>
+
+
+<img class="pattern" src="bilder/pattern.svg"/>
+    </div>
+    <!-- Map section -->
+    <div class="map">
+      <div class="map-top">
+        <h2>Vrak-karta och historisk tidslinje</h2>
+        <p class="preamble">
+          Våra utställningar tar med besökarna på en spännande tidsresa som
+          berättar om de dramatiska händelserna som finns bevarat under ytan i
+          Östersjön.
+        </p>
+      </div>
+
+      <div class="map-bottom">
+
+        <div class="map-toggle">
+          <span>Välj visningsläge</span>
+          <button class="active-mode">Karta</button>
+          <button>Tidslinje</button>
+        </div>
+
+        <div class="pins">
+          <div class="pin" style="left: 90%; top: 25%;" aria-expanded="false">
+            <img src="bilder/pin.svg" />
+            <div class="map-info left" aria-hidden="true">
+              <div class="text">
+                <h3>Svärdet</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  rhoncus, ac feugiat nunc vestibulum hendrerit.
+                </p>
+                <span>Läs mer om vraket</span>
+              </div>
+              <div class="img"></div>
+            </div>
+          </div>
+          <div class="pin" style="left: 43%; top: 5%;" aria-expanded="false">
+            <img src="bilder/pin.svg" />
+            <div class="map-info" aria-hidden="true">
+              <div class="text">
+                <h3>Svärdet</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  rhoncus, ac feugiat nunc vestibulum hendrerit.
+                </p>
+                <span>Läs mer om vraket</span>
+              </div>
+              <div class="img"></div>
+            </div>
+          </div>
+
+          <div class="pin" style="left: 45%; top: 45%;" aria-expanded="false">
+            <img src="bilder/pin.svg" />
+
+            <div class="map-info" aria-hidden="true">
+              <div class="text">
+                <h3>Svärdet</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  rhoncus, ac feugiat nunc vestibulum hendrerit.
+                </p>
+                <span>Läs mer om vraket</span>
+              </div>
+              <div class="img"></div>
+            </div>
+          </div>
+
+          <div class="pin" style="left: 100%; top: 73%;" aria-expanded="false">
+            <img src="bilder/pin.svg" />
+            <div class="map-info left" aria-hidden="true">
+              <div class="text">
+                <h3>Svärdet</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  rhoncus, ac feugiat nunc vestibulum hendrerit.
+                </p>
+                <span>Läs mer om vraket</span>
+              </div>
+              <div class="img"></div>
+            </div>
+          </div>
+          <div class="pin" style="left: 20%; top: 80%;" aria-expanded="false">
+            <img src="bilder/pin.svg" />
+            <div class="map-info top" aria-hidden="true">
+              <div class="text">
+                <h3>Svärdet</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  rhoncus, ac feugiat nunc vestibulum hendrerit.
+                </p>
+                <span>Läs mer om vraket</span>
+              </div>
+              <div class="img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- News section -->
+    <div class="news">  
+     
+      <div class="news-inner ig">
+        <div class="top"><h2>Aktuellt hos oss</h2></div>
+        <div class="content">
+          <div class="inner">
+            <!-- News item -->
+            <div class="item">
+              <div
+                class="item-img"
+                style="background-image: url(bilder/n1.jpg);"
+              ></div>
+              <div class="tag">Nyhet</div>
+              <h3>Spännande vrak i bokfrom</h3>
+              <p>
+                Baltacar-projektet vill få kulturturister att upptäcka och lära
+                sig mer om Östersjöns sjunkna kulturarv. Nu har den avslutande
+                boken kommit som riktar dig till både dykare och icke-dykare.
+              </p>
+            </div>
+            <!-- News item -->
+            <div class="item">
+              <div
+                class="item-img"
+                style="background-image: url(bilder/n2.jpg);"
+              ></div>
+              <div class="tag">Nyhet</div>
+              <h3>Spännande vrak i bokfrom</h3>
+              <p>
+                Baltacar-projektet vill få kulturturister att upptäcka och lära
+                sig mer om Östersjöns sjunkna kulturarv. Nu har den avslutande
+                boken kommit som riktar dig till både dykare och icke-dykare.
+              </p>
+            </div>
+            <!-- News item -->
+            <div class="item">
+              <div
+                class="item-img"
+                style="background-image: url(bilder/n3.jpg);"
+              ></div>
+              <div class="tag">Nyhet</div>
+              <h3>Spännande vrak i bokfrom</h3>
+              <p>
+                Baltacar-projektet vill få kulturturister att upptäcka och lära
+                sig mer om Östersjöns sjunkna kulturarv. Nu har den avslutande
+                boken kommit som riktar dig till både dykare och icke-dykare.
+              </p>
+            </div>
+          </div>
+          <div class="linkbutton">Visa mer aktuellt</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- More info section -->
+
+    <div class="moreinfo">
+    
+      <video id="bgvid-bottom" autoplay muted loop> <source src="film/bg2.mp4" type="video/mp4">   </video>
+      <div class="moreinfo-inner ig">
+        <h3>Visste du att?</h3>
+        <p class="preamble" id="t1">
+          Östersjön praktiskt taget är fri från skeppsmask, vilket gör att vi
+          har vrak bevarade så långt tillbaka som stenåldern.
+        </p>
+        <p class="preamble" id="t2">
+          Baltacar-projektet vill få kulturturister att upptäcka och lära
+          sig mer om Östersjöns sjunkna kulturarv. Nu har den avslutande
+          boken kommit som riktar sig till både dykare och icke-dykare.
+        </p>
+  
+      </div>
+    </div>
+    <!-- Footer -->
+
+    <footer>
+      <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+      <div class="footer-inner ig">
+        <!-- Social media -->
+        <div class="social">
+          <h2>Följ oss i våra sociala kanaler</h2>
+          <div class="sc-content">
+            <!-- Facebook -->
+            <div class="sc-item">
+              <p>Facebook</p>
+              <img src="bilder/fb.jpg" />
+            </div>
+
+            <!-- Instagram -->
+            <div class="sc-item">
+              <p>Instagram</p>
+              <img src="bilder/insta.png" />
+              <div class="linkbutton">Planera ditt besök</div>
+            </div>
+          </div>
+        </div>
+        <!-- SEO -->
+        <div class="seo">
+          <div class="content-left">
+            <img src="bilder/logofooter.svg" />
+            <span>
+              En superduperbra SEO text som driver trafik till webben, om
+              museet, ligger här. Eventuellt den text som visas på sökträff om
+              museet vid träff på Google.
+            </span>
+          </div>
+          <div class="content-right">
+            <p>
+              VRAK är en del av
+              <span style="color: #f36b41;">Statens Maritima Museer</span>
+            </p>
+            <div class="logo-row">
+              <img src="bilder/vasa.svg" />
+              <img style="margin-top: 33px;" src="bilder/sjo.svg" />
+              <img src="bilder/marin.svg" />
+              <img style="margin-top: 33px;" src="bilder/jarn.svg" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Info + links -->
+        <div class="infolinks">
+          <!-- Column -->
+          <div class="col">
+            <p class="heading">Öppettider</p>
+            <p>Tisdag - söndag 10:00 - 17:00</p>
+            <p class="headingtwo">Hitta hit</p>
+            <p>Djurgårdsvägen 38, 115 21</p>
+            <p>Stockholm</p>
+            <p class="link">Se på karta</p>
+          </div>
+          <!-- Column -->
+          <div class="col">
+            <p class="heading">Om webbplatsen</p>
+            <p class="link">Cookies</p>
+            <p class="link">Tillgänglighet</p>
+            <p class="link">Behandling av personuppgifter</p>
+          </div>
+          <!-- Column -->
+          <div class="col">
+            <p class="heading">Hitta snabbt</p>
+            <p class="link">Kontakt</p>
+            <p class="link">Boka, köp biljetter</p>
+            <p class="link">Press</p>
+            <p class="link">Om museet</p>
+            <p class="link">Podd</p>
+          </div>
+          <!-- Column -->
+          <div class="col">
+            <p class="heading">Sociala kanaler</p>
+            <p class="social-link"><img src="bilder/fb.svg" />Facebook</p>
+            <p class="social-link"><img src="bilder/inst.svg" />Instagram</p>
+            <p class="social-link"><img src="bilder/yt.svg" />Youtube</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

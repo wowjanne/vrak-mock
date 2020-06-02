@@ -1,0 +1,228 @@
+@media (max-width: 667px) {
+  /* Overall */
+  h2 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .preamble {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .ig {
+    max-width: 90%;
+  }
+  /* Header */
+
+  header {
+    height: 70px;
+  }
+  .brand-phone {
+    height: 40px;
+    display: flex;
+  }
+  .lang,
+  .dd,
+  .ticket,
+  .brand {
+    display: none;
+  }
+
+  .menubtn {
+    margin-left: 0;
+    font-size: 18px;
+  }
+  /* NAV */
+
+  #slide-out-menu {
+    height: calc(100% - 80px);
+    width: calc(100% - 80px);
+    top: 70px;
+    overflow: scroll;
+    padding-bottom: 80px;
+  }
+  .sticky-header {
+    background: #000;
+  }
+  .link1 {
+    font-size: 22px;
+  }
+
+  .link2 {
+    font-size: 18px;
+  }
+
+  .link-container.bottom-links{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-links .link-icon {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+  }
+  .bottom-links .link-icon img {
+    margin-right: 15px;
+  }
+  .menu-open {
+    background: #000 !important;
+  }
+  /* Hero */
+  .hero {
+    height: 500px;
+  }
+
+  #bgvid {
+    height: 500px;
+    width: auto;
+  }
+
+  /* Video */
+
+  .video {
+    height: 500px;
+    padding-bottom: 60px;
+  }
+  .video-content {
+    bottom: 50px;
+  }
+  .video-content .text {
+    width: 100%;
+  }
+  .video-content .text h2 {
+    min-height: 80px;
+    padding-bottom:20px;
+
+  }
+  .player {
+    height: 185px;
+  }
+  .pattern {
+    width: 300px;
+  }
+  #next,
+  #prev,
+  .disabled,
+  .disabled-next {
+    bottom: 360px;
+    height: 30px;
+    width: 30px;
+  }
+  #next img,
+  #prev img,
+  .disabled img,
+  .disabled-next img {
+    height: 10px;
+  }
+
+  #play_button {
+    width: 60px;
+    height: 60px;
+    top: 36%;
+  }
+  #play_button img {
+    width: 100%;
+    margin-top: 2px;
+    margin-left: 1.5px;
+  }
+  /* Map  */
+  .map-top {
+    width: 95%;
+  }
+
+  .map-bottom {
+    width: 100%;
+    height: 500px;
+  }
+
+  .pins {
+    width: 100%;
+    height: 100%;
+  }
+
+  .map-toggle {
+    z-index: 200;
+    margin: 10px;
+    font-size: 12px;
+    min-width: 0;
+    padding: 10px 30px;
+  }
+
+  .map-toggle button {
+    font-size: 12px;
+    padding: 4px 16px;
+  }
+  /* News */
+  .news-inner .content .inner {
+    flex-direction: column;
+  }
+  .item {
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+  .item h3 {
+    line-height: 34px;
+  }
+  .item p {
+    padding-right: 0;
+  }
+  /* Did you know */
+
+  .moreinfo {
+    height: 400px;
+    padding-top: 60px;
+    padding-bottom: 200px;
+  }
+
+  #bgvid-bottom {
+    display: none;
+  }
+
+  #t1,
+  #t2 {
+    position: absolute;
+    max-width: 95%;
+  }
+
+  .moreinfo{
+
+    background-position: 50% 50%;
+  }
+
+  /* Footer */
+  .footer-inner .sc-content,
+  .seo,
+  .infolinks,
+  .logo-row {
+    flex-direction: column;
+  }
+  .seo {
+    padding-top: 30px;
+  }
+  .content-right,
+  .content-left {
+    width: 100%;
+  }
+  .content-right {
+    margin-top: 40px;
+  }
+  .sc-item img {
+    width: 100%;
+  }
+
+  .sc-item:first-child {
+    margin-bottom: 30px;
+  }
+
+  .col {
+    margin-bottom: 40px;
+  }
+
+  .infolinks {
+    padding-bottom: 0;
+  }
+}
