@@ -36,7 +36,7 @@
   /* NAV */
 
   #slide-out-menu {
-    height: calc(100vh - 80px);
+    height: calc(100% - 80px);
     width: calc(100% - 80px);
     top: 70px;
     overflow: scroll;
@@ -50,7 +50,8 @@
   }
 
   .link2 {
-    font-size: 18px;
+    font-size: 18px;    
+position: relative;
   }
 
   .link-container.bottom-links{
