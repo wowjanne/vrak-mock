@@ -53,10 +53,12 @@
     font-size: 18px;    
 
   }
-  .lvl2{position: relative;}
+  .lvl2,.link-container{position: relative;}
+
+
   .link-container.bottom-links{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    position: relative; min-height:150px;
   }
 
   .bottom-links .link-icon {
