@@ -41,7 +41,9 @@ p {
 
 .linkbutton {
   display: inline-block;
-  font-family: "replica";
+text-transform: uppercase;
+    font-family: "replicaBold";
+
   font-size: 16px;
   color: #fff;
   padding: 12px 40px;
@@ -75,7 +77,7 @@ header {
 }
 
 .sticky-header {
-  background: rgba(0, 0, 0, 0.96);
+  background: rgba(0, 0, 0, 0.94);
 }
 .inner-header {
   display: flex;
@@ -549,6 +551,8 @@ video {
   font-size: 17px;
   background: none;
   border-radius: 30px;
+    border-style:solid;
+  border-color:#fff;
   color: #fff;
   padding: 10px 30px;
   margin-left: 20px;
@@ -561,7 +565,7 @@ video {
   color: #f36b41 !important;
 }
 .active-mode {
-  border-color: #f36b41;
+  border-color: #f36b41 !important;
   color: #f36b41 !important;
 }
 .pins {
