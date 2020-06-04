@@ -551,6 +551,7 @@ video {
   font-size: 17px;
   background: none;
   border-radius: 30px;
+border-width:1px;
     border-style:solid;
   border-color:#fff;
   color: #fff;
